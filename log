@@ -456,3 +456,17 @@ Sat 11 Mar 2023 04:12:15 AM UTC:
  tests:  4|3
 total_score: 40/70
 756fa81
+Sat 11 Mar 2023 04:16:10 AM UTC: 
+ exercises.c | 7 ++++++-
+ 1 file changed, 6 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘asignarValor’:
+exercises.c:111:18: error: ‘aux’ undeclared (first use in this function)
+  111 |       v[i].datos[aux]=0<;
+      |                  ^~~
+exercises.c:111:18: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:111:25: error: expected expression before ‘;’ token
+  111 |       v[i].datos[aux]=0<;
+      |                         ^
+Compilation failed
+ec39ecb
