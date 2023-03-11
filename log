@@ -424,3 +424,9 @@ Sat 11 Mar 2023 04:07:25 AM UTC:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 9cbe5a3
+Sat 11 Mar 2023 04:08:58 AM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+ tests:  4|3
+total_score: 40/70
+b717201
