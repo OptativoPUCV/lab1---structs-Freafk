@@ -337,3 +337,9 @@ exercises.c:65:10: error: assignment to expression with array type
       |          ^
 Compilation failed
 1021e5f
+Sat 11 Mar 2023 03:06:54 AM UTC: 
+ exercises.c | 5 +++--
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+ tests:  3|4
+total_score: 30/70
+1d8f8a2
