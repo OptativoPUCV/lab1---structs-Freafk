@@ -36,7 +36,7 @@ void arrayMaxMin(int *a, int n, int *max, int *min) {
       }
       if(a[i]>a[i-1])
       {
-        *max=40;
+        *max=a[i];
       }
     }
 }
