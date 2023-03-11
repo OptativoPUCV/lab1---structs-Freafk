@@ -245,3 +245,17 @@ exercises.c:31:30: error: expected expression before ‘[’ token
 cc1: all warnings being treated as errors
 Compilation failed
 92420c0
+Sat 11 Mar 2023 02:44:59 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘arrayMaxMin’:
+exercises.c:31:20: error: initialization of ‘int *’ from ‘int’ makes pointer from integer without a cast [-Werror=int-conversion]
+   31 |   for(int i=1,*max=a[0],*min=a[0];i<n;i++)
+      |                    ^
+exercises.c:31:30: error: initialization of ‘int *’ from ‘int’ makes pointer from integer without a cast [-Werror=int-conversion]
+   31 |   for(int i=1,*max=a[0],*min=a[0];i<n;i++)
+      |                              ^
+cc1: all warnings being treated as errors
+Compilation failed
+d32cff3
