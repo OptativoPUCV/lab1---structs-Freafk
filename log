@@ -389,3 +389,18 @@ exercises.c:89:17: error: assignment to ‘int *’ from incompatible pointer ty
 cc1: all warnings being treated as errors
 Compilation failed
 daf420b
+Sat 11 Mar 2023 03:59:05 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:89:19: error: ‘Int’ undeclared (first use in this function); did you mean ‘int’?
+   89 |   vectorn->datos=(Int*)malloc(sizeof(Int)*n);
+      |                   ^~~
+      |                   int
+exercises.c:89:19: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:89:23: error: expected expression before ‘)’ token
+   89 |   vectorn->datos=(Int*)malloc(sizeof(Int)*n);
+      |                       ^
+Compilation failed
+9b3ccd3
