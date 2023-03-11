@@ -430,3 +430,13 @@ Sat 11 Mar 2023 04:08:58 AM UTC:
  tests:  4|3
 total_score: 40/70
 b717201
+Sat 11 Mar 2023 04:10:53 AM UTC: 
+ exercises.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:5:
+exercises.c: In function ‘asignarValor’:
+exercises.c:107:3: error: invalid type argument of unary ‘*’ (have ‘Vector’)
+  107 |   *v[i]=valor;
+      |   ^~~~~
+Compilation failed
+b3cd225
