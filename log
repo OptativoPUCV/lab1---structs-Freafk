@@ -259,3 +259,16 @@ exercises.c:31:30: error: initialization of ‘int *’ from ‘int’ makes poi
 cc1: all warnings being treated as errors
 Compilation failed
 d32cff3
+Sat 11 Mar 2023 02:45:46 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘arrayMaxMin’:
+exercises.c:31:20: error: invalid type argument of unary ‘*’ (have ‘int’)
+   31 |   for(int i=1,*max=*a[0],*min=*a[0];i<n;i++)
+      |                    ^~~~~
+exercises.c:31:31: error: invalid type argument of unary ‘*’ (have ‘int’)
+   31 |   for(int i=1,*max=*a[0],*min=*a[0];i<n;i++)
+      |                               ^~~~~
+Compilation failed
+3d6b437
