@@ -106,7 +106,7 @@ void asignarValor(Vector * v, int i, int valor) {
 
   v[i].capacidad=valor;
   v[i].datos=realloc(v[i].datos,sizeof(int)*valor);
-  for(int aux=0;i<valor;aux++)
+  for(int aux=0;aux<valor;aux++)
     {
       v[i].datos[aux]=0;
     }
