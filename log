@@ -149,3 +149,17 @@ test.c:251:5: error: ‘main’ defined but not used [-Werror=unused-function]
 cc1: all warnings being treated as errors
 Compilation failed
 5d3eb36
+Sat 11 Mar 2023 02:25:37 AM UTC: 
+ exercises.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘swap’:
+exercises.c:17:11: error: initialization of ‘int’ from ‘int *’ makes integer from pointer without a cast [-Werror=int-conversion]
+   17 |   int aux=b;
+      |           ^
+exercises.c:19:4: error: assignment to ‘int *’ from ‘int’ makes pointer from integer without a cast [-Werror=int-conversion]
+   19 |   a=aux;
+      |    ^
+cc1: all warnings being treated as errors
+Compilation failed
+c5cc544
