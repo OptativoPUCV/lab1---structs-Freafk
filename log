@@ -272,3 +272,17 @@ exercises.c:31:31: error: invalid type argument of unary ‘*’ (have ‘int’
       |                               ^~~~~
 Compilation failed
 3d6b437
+Sat 11 Mar 2023 02:46:36 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘arrayMaxMin’:
+exercises.c:31:27: error: expected expression before ‘int’
+   31 |   for(*max=a[0],*min=a[0],int i=1;i<n;i++)
+      |                           ^~~
+exercises.c:31:35: error: ‘i’ undeclared (first use in this function)
+   31 |   for(*max=a[0],*min=a[0],int i=1;i<n;i++)
+      |                                   ^
+exercises.c:31:35: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+fb56f7b
