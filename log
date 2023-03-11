@@ -378,3 +378,14 @@ exercises.c:89:17: error: ‘vectorn’ is used uninitialized [-Werror=uninitial
 cc1: all warnings being treated as errors
 Compilation failed
 2f7bcc4
+Sat 11 Mar 2023 03:58:15 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:89:17: error: assignment to ‘int *’ from incompatible pointer type ‘Vector *’ [-Werror=incompatible-pointer-types]
+   89 |   vectorn->datos=(Vector*)malloc(sizeof(Vector)*n);
+      |                 ^
+cc1: all warnings being treated as errors
+Compilation failed
+daf420b
