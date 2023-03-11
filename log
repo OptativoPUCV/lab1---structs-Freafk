@@ -343,3 +343,13 @@ Sat 11 Mar 2023 03:06:54 AM UTC:
  tests:  3|4
 total_score: 30/70
 1d8f8a2
+Sat 11 Mar 2023 03:53:40 AM UTC: 
+ exercises.c | 11 ++++++++++-
+ 1 file changed, 10 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:88:32: error: expected expression before ‘int’
+   88 |   Vector *vectorn=(int*)malloc(int*,n);
+      |                                ^~~
+Compilation failed
+539f8eb
