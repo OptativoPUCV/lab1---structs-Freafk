@@ -353,3 +353,14 @@ exercises.c:88:32: error: expected expression before ‘int’
       |                                ^~~
 Compilation failed
 539f8eb
+Sat 11 Mar 2023 03:56:15 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:92:14: error: ‘*vectorn.datos’ may be used uninitialized [-Werror=maybe-uninitialized]
+   92 |       vectorn->datos[i]=0;
+      |       ~~~~~~~^~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+95a52f4
