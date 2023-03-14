@@ -542,3 +542,14 @@ exercises.c:107:8: error: incompatible types when assigning to type ‘Vector’
 cc1: all warnings being treated as errors
 Compilation failed
 520ab0a
+Tue 14 Mar 2023 01:50:39 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘asignarValor’:
+exercises.c:107:13: error: assignment to ‘int *’ from ‘int’ makes pointer from integer without a cast [-Werror=int-conversion]
+  107 |   v[i].datos=valor;
+      |             ^
+cc1: all warnings being treated as errors
+Compilation failed
+17e0fcc
