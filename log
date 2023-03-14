@@ -493,3 +493,20 @@ Sat 11 Mar 2023 04:31:24 AM UTC:
  tests:  4|3
 total_score: 40/70
 e7aa751
+Tue 14 Mar 2023 01:42:28 PM UTC: 
+ exercises.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:5:
+exercises.c: In function ‘asignarValor’:
+exercises.c:107:8: error: incompatible types when assigning to type ‘Vector’ from type ‘int’
+  107 |   v[i]=valor
+      |        ^~~~~
+exercises.c:107:13: error: expected ‘;’ before ‘}’ token
+  107 |   v[i]=valor
+      |             ^
+      |             ;
+  108 | 
+  109 | }
+      | ~            
+Compilation failed
+225a857
