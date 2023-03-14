@@ -553,3 +553,13 @@ exercises.c:107:13: error: assignment to ‘int *’ from ‘int’ makes pointe
 cc1: all warnings being treated as errors
 Compilation failed
 17e0fcc
+Tue 14 Mar 2023 01:51:00 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘asignarValor’:
+exercises.c:107:7: error: invalid type argument of ‘->’ (have ‘Vector’)
+  107 |   v[i]->datos=valor;
+      |       ^~
+Compilation failed
+d149edf
