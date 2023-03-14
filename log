@@ -530,3 +530,15 @@ Tue 14 Mar 2023 01:44:33 PM UTC:
  tests:  4|3
 total_score: 40/70
 9e64e8c
+Tue 14 Mar 2023 01:48:01 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘asignarValor’:
+exercises.c:107:8: error: cast to pointer from integer of different size [-Werror=int-to-pointer-cast]
+  107 |   v[i]=(Vector*)valor;
+      |        ^
+exercises.c:107:8: error: incompatible types when assigning to type ‘Vector’ from type ‘Vector *’
+cc1: all warnings being treated as errors
+Compilation failed
+520ab0a
