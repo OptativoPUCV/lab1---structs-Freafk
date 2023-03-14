@@ -597,3 +597,16 @@ Tue 14 Mar 2023 01:54:47 PM UTC:
  1 file changed, 5 insertions(+), 1 deletion(-)
  tests:  0|0
 c39770d
+Tue 14 Mar 2023 01:55:31 PM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘asignarValor’:
+exercises.c:107:7: error: invalid type argument of ‘->’ (have ‘Vector’)
+  107 |   v[i]->capacidad=valor;
+      |       ^~
+exercises.c:110:11: error: invalid type argument of ‘->’ (have ‘Vector’)
+  110 |       v[i]->datos[i]=0;
+      |           ^~
+Compilation failed
+49454e0
