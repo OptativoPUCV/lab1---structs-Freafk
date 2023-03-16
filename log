@@ -662,3 +662,14 @@ exercises.c:131:16: error: invalid operands to binary + (have ‘Vector’ and �
 cc1: all warnings being treated as errors
 Compilation failed
 9ed8431
+Thu 16 Mar 2023 08:35:39 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV’:
+exercises.c:129:17: error: implicit declaration of function ‘len’ [-Werror=implicit-function-declaration]
+  129 |   for(int i=0;i<len(a);i++)
+      |                 ^~~
+cc1: all warnings being treated as errors
+Compilation failed
+a8b5ee6
