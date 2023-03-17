@@ -142,5 +142,5 @@ void sumaV2(int a1, int a2, int b1, int b2, Vector *c){
   A2=crearVector(a2);
   B1=crearVector(b1);
   B2=crearVector(b2);
-  sumarV(a1,a2,c);
+  sumaV(a1,a2,c);
 }
