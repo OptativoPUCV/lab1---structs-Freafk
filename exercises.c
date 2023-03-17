@@ -142,7 +142,5 @@ void sumaV2(int a1, int a2, int b1, int b2, Vector *c){
   A2=crearVector(a2);
   B1=crearVector(b1);
   B2=crearVector(b2);
-  B3=sumaV(b1,b2);
-  A3=sumaV(a1,a2);
-  c->datos=sumaV(A3+B3);
+  sumarV(a1,a2,c);
 }

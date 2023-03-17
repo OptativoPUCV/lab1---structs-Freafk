@@ -789,3 +789,32 @@ exercises.c:128:6: note: declared here
 cc1: all warnings being treated as errors
 Compilation failed
 b537439
+Fri 17 Mar 2023 02:29:55 AM UTC: 
+ exercises.c | 4 +---
+ 1 file changed, 1 insertion(+), 3 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV2’:
+exercises.c:141:3: error: ‘A1’ undeclared (first use in this function); did you mean ‘a1’?
+  141 |   A1=crearVector(a1);
+      |   ^~
+      |   a1
+exercises.c:141:3: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:142:3: error: ‘A2’ undeclared (first use in this function); did you mean ‘a2’?
+  142 |   A2=crearVector(a2);
+      |   ^~
+      |   a2
+exercises.c:143:3: error: ‘B1’ undeclared (first use in this function); did you mean ‘b1’?
+  143 |   B1=crearVector(b1);
+      |   ^~
+      |   b1
+exercises.c:144:3: error: ‘B2’ undeclared (first use in this function); did you mean ‘b2’?
+  144 |   B2=crearVector(b2);
+      |   ^~
+      |   b2
+exercises.c:145:3: error: implicit declaration of function ‘sumarV’; did you mean ‘sumaV’? [-Werror=implicit-function-declaration]
+  145 |   sumarV(a1,a2,c);
+      |   ^~~~~~
+      |   sumaV
+cc1: all warnings being treated as errors
+Compilation failed
+1e97065
