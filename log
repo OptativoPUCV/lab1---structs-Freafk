@@ -897,3 +897,45 @@ exercises.c:143:11: error: unused variable ‘B1’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 1ba032d
+Fri 17 Mar 2023 02:31:47 AM UTC: 
+ exercises.c | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV2’:
+exercises.c:141:13: error: invalid initializer
+  141 |   Vector A1=crearVector(a1);
+      |             ^~~~~~~~~~~
+exercises.c:142:13: error: invalid initializer
+  142 |   Vector A2=crearVector(a2);
+      |             ^~~~~~~~~~~
+exercises.c:143:13: error: invalid initializer
+  143 |   Vector B1=crearVector(b1);
+      |             ^~~~~~~~~~~
+exercises.c:144:13: error: invalid initializer
+  144 |   Vector B2=crearVector(b2);
+      |             ^~~~~~~~~~~
+exercises.c:145:9: error: incompatible type for argument 1 of ‘sumaV’
+  145 |   sumaV(A1,A2,c);
+      |         ^~
+      |         |
+      |         Vector
+exercises.c:128:21: note: expected ‘Vector *’ but argument is of type ‘Vector’
+  128 | void sumaV(Vector * a, Vector * b, Vector * c) {
+      |            ~~~~~~~~~^
+exercises.c:145:12: error: incompatible type for argument 2 of ‘sumaV’
+  145 |   sumaV(A1,A2,c);
+      |            ^~
+      |            |
+      |            Vector
+exercises.c:128:33: note: expected ‘Vector *’ but argument is of type ‘Vector’
+  128 | void sumaV(Vector * a, Vector * b, Vector * c) {
+      |                        ~~~~~~~~~^
+exercises.c:144:10: error: unused variable ‘B2’ [-Werror=unused-variable]
+  144 |   Vector B2=crearVector(b2);
+      |          ^~
+exercises.c:143:10: error: unused variable ‘B1’ [-Werror=unused-variable]
+  143 |   Vector B1=crearVector(b1);
+      |          ^~
+cc1: all warnings being treated as errors
+Compilation failed
+5afbbac
