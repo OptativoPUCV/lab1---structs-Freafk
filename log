@@ -708,3 +708,84 @@ Thu 16 Mar 2023 08:47:23 PM UTC:
  tests:  7|1
 total_score: 60/70
 4af6c1c
+Fri 17 Mar 2023 02:25:46 AM UTC: 
+ exercises.c | 10 +++++++---
+ 1 file changed, 7 insertions(+), 3 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV2’:
+exercises.c:141:3: error: ‘A1’ undeclared (first use in this function); did you mean ‘a1’?
+  141 |   A1=crearVector(a1);
+      |   ^~
+      |   a1
+exercises.c:141:3: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:142:3: error: ‘A2’ undeclared (first use in this function); did you mean ‘a2’?
+  142 |   A2=crearVector(a2);
+      |   ^~
+      |   a2
+exercises.c:143:3: error: ‘B1’ undeclared (first use in this function); did you mean ‘b1’?
+  143 |   B1=crearVector(b1);
+      |   ^~
+      |   b1
+exercises.c:144:3: error: ‘B2’ undeclared (first use in this function); did you mean ‘b2’?
+  144 |   B2=crearVector(b2);
+      |   ^~
+      |   b2
+exercises.c:145:3: error: ‘B3’ undeclared (first use in this function)
+  145 |   B3=sumaV(b1,b2);
+      |   ^~
+exercises.c:145:12: error: passing argument 1 of ‘sumaV’ makes pointer from integer without a cast [-Werror=int-conversion]
+  145 |   B3=sumaV(b1,b2);
+      |            ^~
+      |            |
+      |            int
+exercises.c:128:21: note: expected ‘Vector *’ but argument is of type ‘int’
+  128 | void sumaV(Vector * a, Vector * b, Vector * c) {
+      |            ~~~~~~~~~^
+exercises.c:145:15: error: passing argument 2 of ‘sumaV’ makes pointer from integer without a cast [-Werror=int-conversion]
+  145 |   B3=sumaV(b1,b2);
+      |               ^~
+      |               |
+      |               int
+exercises.c:128:33: note: expected ‘Vector *’ but argument is of type ‘int’
+  128 | void sumaV(Vector * a, Vector * b, Vector * c) {
+      |                        ~~~~~~~~~^
+exercises.c:145:6: error: too few arguments to function ‘sumaV’
+  145 |   B3=sumaV(b1,b2);
+      |      ^~~~~
+exercises.c:128:6: note: declared here
+  128 | void sumaV(Vector * a, Vector * b, Vector * c) {
+      |      ^~~~~
+exercises.c:146:3: error: ‘A3’ undeclared (first use in this function)
+  146 |   A3=sumaV(a1,a2);
+      |   ^~
+exercises.c:146:12: error: passing argument 1 of ‘sumaV’ makes pointer from integer without a cast [-Werror=int-conversion]
+  146 |   A3=sumaV(a1,a2);
+      |            ^~
+      |            |
+      |            int
+exercises.c:128:21: note: expected ‘Vector *’ but argument is of type ‘int’
+  128 | void sumaV(Vector * a, Vector * b, Vector * c) {
+      |            ~~~~~~~~~^
+exercises.c:146:15: error: passing argument 2 of ‘sumaV’ makes pointer from integer without a cast [-Werror=int-conversion]
+  146 |   A3=sumaV(a1,a2);
+      |               ^~
+      |               |
+      |               int
+exercises.c:128:33: note: expected ‘Vector *’ but argument is of type ‘int’
+  128 | void sumaV(Vector * a, Vector * b, Vector * c) {
+      |                        ~~~~~~~~~^
+exercises.c:146:6: error: too few arguments to function ‘sumaV’
+  146 |   A3=sumaV(a1,a2);
+      |      ^~~~~
+exercises.c:128:6: note: declared here
+  128 | void sumaV(Vector * a, Vector * b, Vector * c) {
+      |      ^~~~~
+exercises.c:147:12: error: too few arguments to function ‘sumaV’
+  147 |   c->datos=sumaV(A3+B3);
+      |            ^~~~~
+exercises.c:128:6: note: declared here
+  128 | void sumaV(Vector * a, Vector * b, Vector * c) {
+      |      ^~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+b537439
