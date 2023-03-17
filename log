@@ -939,3 +939,14 @@ exercises.c:143:10: error: unused variable ‘B1’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 5afbbac
+Fri 17 Mar 2023 02:34:04 AM UTC: 
+ exercises.c | 8 +++-----
+ 1 file changed, 3 insertions(+), 5 deletions(-)
+In file included from test.c:5:
+test.c: In function ‘sumaV2’:
+exercises.c:142:3: error: ‘suma1’ is used uninitialized [-Werror=uninitialized]
+  142 |   sumaV(crearVector(a1),crearVector(a2),suma1);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+1777ff7
