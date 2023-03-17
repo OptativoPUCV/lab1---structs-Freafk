@@ -883,3 +883,17 @@ exercises.c:144:3: error: ‘B2’ undeclared (first use in this function); did 
       |   b2
 Compilation failed
 df7636f
+Fri 17 Mar 2023 02:31:15 AM UTC: 
+ exercises.c | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV2’:
+exercises.c:144:11: error: unused variable ‘B2’ [-Werror=unused-variable]
+  144 |   Vector *B2=crearVector(b2);
+      |           ^~
+exercises.c:143:11: error: unused variable ‘B1’ [-Werror=unused-variable]
+  143 |   Vector *B1=crearVector(b1);
+      |           ^~
+cc1: all warnings being treated as errors
+Compilation failed
+1ba032d
