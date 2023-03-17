@@ -950,3 +950,8 @@ exercises.c:142:3: error: ‘suma1’ is used uninitialized [-Werror=uninitializ
 cc1: all warnings being treated as errors
 Compilation failed
 1777ff7
+Fri 17 Mar 2023 02:34:35 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|0
+7daf0c9
